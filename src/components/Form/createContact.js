@@ -4,7 +4,7 @@ import {
   useFetchContactsQuery,
 } from '../../redux/contacts/contactsSlice';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-import { Form, Input, Button, message } from 'antd';
+import { Form, Input, Button } from 'antd';
 
 const formItemLayout = {
   labelCol: {
@@ -42,7 +42,6 @@ export const CreateContact = () => {
     console.log(e.currentTarget.value);
     setContactName(e.currentTarget.value);
     qwe();
-    asd();
   };
   const qwe = () => {
     if (data !== undefined) {
@@ -51,8 +50,6 @@ export const CreateContact = () => {
       return;
     }
   };
-  const asd = () =>
-    contactName && qwe() === true ? message.warning('warning') : null;
   return (
     <Form
       autoComplete="off"
