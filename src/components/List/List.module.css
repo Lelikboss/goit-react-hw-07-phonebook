@@ -1,0 +1,43 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.listFlex {
+  background-color: #f1f1f1;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.listHeadItem {
+  padding: 0 20px;
+}
+.itemFlex {
+  padding: 5px;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f1f1f1;
+  transition: background-color 350ms;
+}
+.itemFlex:hover {
+  background-color: #f1f1f1;
+}
+.btn {
+  cursor: pointer;
+  transition: border-color 250ms;
+  border: 1px dashed blue;
+}
+.btn:hover {
+  border-color: red;
+  outline: none;
+}
+.flexBasis {
+  flex-basis: calc(100% * 3);
+}
